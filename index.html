@@ -10,6 +10,10 @@ don&amp;apos;t look back., Stop pushing your clients into a corner., $ 29, $ 59,
     <title>finance.ai</title>
 
     <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="index.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
@@ -110,7 +114,7 @@ don&amp;apos;t look back., Stop pushing your clients into a corner., $ 29, $ 59,
 	c-0.252,0.137-0.502,0.297-0.752,0.476C5.276,41.792,2,35.022,2,27.5z">
               </path>
             </svg>
-          </span>&nbsp;Sign In
+          </span>&nbsp;<span onclick="document.getElementById('myModal').showModal()">Sign In</span>
         </a>
       </div>
     </header>
@@ -291,5 +295,29 @@ don&amp;apos;t look back., Stop pushing your clients into a corner., $ 29, $ 59,
       </div>
     </footer>
 <!--      -->
+
+<dialog id="myModal" class="animate__animated animate__bounceInRight">
+  <div class="login-box">
+    <div  style="display: flex; justify-content: flex-end;">
+      <span onclick="document.getElementById('myModal').close()" style="font-size: 20px; cursor: pointer;">x</span>
+  </div>
+      <h2>Login</h2>
+      <form>
+        
+          <div class="user-box">
+              <input type="text" name="username" required="">
+              <label>Username</label>
+          </div>
+          <div class="user-box">
+              <input type="text" name="username" required="">
+              <label>Password</label>
+          </div>
+          <div>
+              <button class="log">Login</button>
+          </div>
+      </form>
+  </div>
+</dialog>
+
   </body>
 </html>
